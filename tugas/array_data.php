@@ -45,7 +45,7 @@
             Tampilkan data array tersebut disini dan buatlah menjadi sebuah table
           */
           foreach($m_fruits[0] as $header){
-            echo "<th>".$header."</th>";
+            echo "<td>".$header."</td>";
           }
           for($i=1;$i<count($m_fruits);$i++){
            echo "<tr>";
