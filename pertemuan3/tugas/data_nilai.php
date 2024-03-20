@@ -4,7 +4,7 @@
 <form class="form-horizontal w-75 mt-5 mx-auto p-4 border shadow-sm" method="" action="form_nilai.php">
 <div class="container">
   <h2>Data Mahasiswa</h2>
-  <table class="table">
+  <table class="table table-bordered">
       <thead>
           <tr>
               <th>No</th>
@@ -57,8 +57,8 @@
 
                         $keterangan = number_format (($nilai_uts + $nilai_uas + $nilai_tugas) / 3, 2);
                         $lulus = kelulusan ($keterangan);
-                        $predikat = predikat ($grade);
-                        $grade = grade ($keterangan);
+                        $predikat = predikat ($lulus);
+                        $grade = grade ($predikat);
                         echo '<tr>';
                         echo '<td> 3 </td>';
                         echo '<td> ' . $nama_lengkap . '</td>';
